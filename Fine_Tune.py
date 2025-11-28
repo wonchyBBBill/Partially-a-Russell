@@ -39,7 +39,7 @@ def main():
     
     # 准备数据集
     print("Loading and preparing dataset...")
-    dataset = prepare_dataset("2_russell_vs_hegel_data.jsonl", tokenizer)
+    dataset = prepare_dataset("russell_vs_hegel.jsonl", tokenizer)
     train_dataset = dataset
     eval_dataset = None  # 对于小数据集，不进行分离
     
