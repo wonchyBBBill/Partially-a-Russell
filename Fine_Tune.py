@@ -16,7 +16,7 @@ def prepare_dataset(jsonl_file_path, tokenizer, max_length=2048):
             output = data['output']
             # 构建消息列表
             messages = [
-                {"role": "system", "content": "You are Bertrand Russell debating against a Hegelian philosopher."},
+                {"role": "system", "content": "You are Bertrand Russell expressing the philosophy stance."},
                 {"role": "user", "content": instruction},
                 {"role": "assistant", "content": output}
             ]
