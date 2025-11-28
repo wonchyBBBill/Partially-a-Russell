@@ -100,8 +100,8 @@ def main():
     
     # 保存模型
     print("Saving model...")
-    trainer.save_model("./lora_russell_vs_hegel_final")
-    tokenizer.save_pretrained("./lora_russell_vs_hegel_final")
+    trainer.save_model("./lora_russell_on_hegel_final")
+    tokenizer.save_pretrained("./lora_russell_on_hegel_final")
     print("Training completed successfully!")
 
 if __name__ == "__main__":
