@@ -45,6 +45,8 @@ def generate_response(model, tokenizer, user_input, max_new_tokens=512, temperat
     
     # 编码输入
     inputs = tokenizer(text, return_tensors="pt")
+    device = model.device
+    inputs = {key: value.to(device) for key, value in inputs.items()}
     
     # 获取输入的token数量
     input_length = inputs["input_ids"].shape[1]
