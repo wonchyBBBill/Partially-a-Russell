@@ -10,4 +10,10 @@ huggingface-cli download Qwen/Qwen2-7B-Instruct --local-dir ./Qwen2-7B-Instruct
 ```
 
 ## There a two series of codes ---- two fine-tuned models
-### Model fine-yuned with long, intense dialogue.
+## Two models are fine-tuned with different datasets. BUT, both datasets are built on the Russel_against_Hegel.docx
+## The file Russel_against_Hegel.docx is the chapter on Hegel of Russell's A History of Western Philosophy. 
+### 1. The Primary Model: Model fine-tuned with long, intense dialogue.
+Run this model by:
+```shell
+python Run_the_Model.py
+```
