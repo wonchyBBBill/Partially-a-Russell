@@ -28,4 +28,12 @@ python Fine_Tune.py # This code will produce the LoRA folder lora_russell_on_heg
 python Run_the_Model.py
 ```
 
-### 2. The Second Model
+### 2. The Second Model: fine-tuned with short Q&A questions
+### The second model is not the main work. It's just for comparison with the primary model.
+Run this code to create jsonl file for this fine-tuning
+```shell
+python short_qa_dataset.py
+# This code will create a new dataset for fine-tuning.
+# The dataset is also based on Russel_against_Hegel.docx
+```
+
